@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Favourite Game - Fate/Grand Order</title>
+  <meta charset="UTF-8" />
+  <style>
+    body {font-family: Arial, sans-serif; margin: 0; padding: 0;background: whitesmoke;;}
+    #nav ul {background: darkslategray;padding: 10px; list-style: none; margin: 0;text-align: center;}
+    #nav ul li {display: inline; margin: 0 10px;}
+    #nav ul li a {color: white; text-decoration: none;}
+    #nav ul li a:hover {text-decoration: underline;}
+    #header {text-align: center;background: lightgray;padding: 15px;}
+    #footer { text-align: center; background: darkslategray; padding: 15px; }
+    #content {padding: 20px;}
+    h1, h2 {color: dimgray;}
+    
+ .section {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+      </style>
+</head>
+<body>
+
+  <div id="header">
+    <h1>My Favourite Game: Fate/Grand Order (FGO)</h1>
+  </div>
+
+  <div id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="background.html">My Background</a></li>
+      <li><a href="myfamily.html">Family</a></li>
+      <li><a href="game.html">My Favourite Game</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="education.html">My Education</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <div class="section">
+      <h2>About the Game</h2>
+      <p><strong>Fate/Grand Order</strong> (FGO) is a turn-based tactical RPG mobile game developed by Delightworks and published by Aniplex. Based on the popular Fate series, players take on the role of a Master, summoning heroic spirits known as Servants to battle threats across time and space.</p>
+      <img src="fate.jpg" alt="Fate/Grand Order" style="width:150px; border-radius:15px; border:2px solid black;">
+    </div>
+
+    <div class="section">
+      <h2>Favourite Arc: Avalon le Fae</h2>
+      <p><strong>Avalon le Fae</strong> is one of the most beautifully written Lostbelts in FGO. It takes place in a dark, fairy-tale version of Britain, filled with mystery, sadness, and beauty.The characters are not just heroes or villains, they are complex people with reasons behind their actions. For example, Morgan, Castoria, and especially Oberon stand out because of how emotional and surprising their stories are. They are also my top 3 three characters so far in this game. The world itself feels alive, with its own rules, history, and sadness. The writing is emotional and thoughtful and the background music and art make the scenes even more powerful. The story is long, but it never feels boring because it keeps surprising me with twists and deep moments. The ending is touching and bittersweet. Most people also says that Avalon Le Fae is the best arc in fgo and and it's not just a rumor. There also quote like <strong>"AVALON LE FAE is when FGO peak.</strong>In the end, Avalon le Fae isn’t just a story, it’s a full emotional journey that shows how great FGO’s storytelling can be. </p>
+      <img src="avalon.jpeg" alt="Avalon le Fae" style="width:350px; border-radius:10px; border:1px solid black;">
+    </div>
+
+    <div class="section">
+      <h2>Favourite characters</h2>
+      <p>There are a lot of characters in Fate Grand Order. There are approximately 431 characters in this game. However, there are 5 characters in FGO that really interest me. Their design, voice acting, and battle animations are incredible.Furthermore, They also have deep and interesting backgrounds that make the game even more interesting. Below are my top 5 characters in Fate Grand Order:</p>
+
+<center><img id="servantImage" src="aesc2.webp" alt="Morgan Le Fay" style="width:250px; border-radius:10px; border:1px solid black;">
+ <br><br>
+
+    <button onclick="changeImage('aesc2.webp', 'Morgan Le Fay')">1st</button>
+    <button onclick="changeImage('vortigern.webp', 'Oberon Vortigern')">2nd</button>
+    <button onclick="changeImage('castoria.webp', 'Castoria')">3rd</button>
+    <button onclick="changeImage('habetrot.webp', 'Habetrot')">4th</button>
+    <button onclick="changeImage('merlin.webp', 'Merlin')">5th</button>
+
+    <p id="imageDescription">Morgan Le Fay </p>
+  </div>
+
+  <script>
+    function changeImage(filename, description) {
+      let img = document.getElementById("servantImage");
+      img.src = filename;
+      img.alt = description;
+
+      let desc = document.getElementById("imageDescription");
+      desc.textContent = description;
+    }
+  </script>
+    </div>
+  </div>
+
+<center><audio  autoplay controls>
+  <source src="lostbelt6.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+  <div id="footer">
+    <p>&copy; 2025 Muhammad Zahiruddin Bin Izam Azali. Recommended Browser: Chrome. Resolution: 1366x768  Last updated: June 5, 2025.</p>
+  </div>
+
+</body>
+</html>
