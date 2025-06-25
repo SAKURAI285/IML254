@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Personal Interest</title>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: mediumaquamarine;
+      background-size: 600% 600%;
+      animation: movebg 15s ease infinite;
+    }
+
+    @keyframes movebg {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .navbar {
+      background: darkslategray;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+
+    .navbar a:hover,
+    .navbar .active {
+      background: mediumturquoise;
+      border-radius: 5px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: darkslategray;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .main-image {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .section {
+      margin-top: 60px;
+      margin-bottom: 50px;
+    }
+
+    .gallery,
+    .story-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .gallery img,
+    .story-gallery img {
+      width: 200px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    
+    .main-image:hover,
+    .gallery img:hover,
+    .story-gallery img:hover,
+    .character-profile img:hover {
+      transform: scale(1.05);
+    }
+
+    .characters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .character-profile {
+      width: 240px;
+      background: LightSteelBlue;
+      text-align: center;
+      padding: 8px;
+      border-radius: 10px;
+      font-size: 0.9em;
+    }
+
+    .character-profile img {
+      width: 70%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto 10px;
+      transition: transform 0.3s ease;
+    }
+
+    video {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+   footer {
+      background: darkslategray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="family.html">My Family</a>
+    <a href="education.html">My Education</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="interest.html" class="active">Personal Interest</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  
+  <div class="content">
+    <h1>My Personal Interest: Avalon le Fae</h1>
+    <p>
+      Avalon Le Fae is a sub story or arc in a game called <strong>Fate Grand Order</strong>. This is my favourite arc in Fate/Grand Order. In total, this arc lasted around 36 hours which is only the duration of story and it's not including gameplay time. I still remember spending about one to two weeks finishing it… but hey, it was totally worth it, I guess! The story, world-building, and emotional depth really stood out to me. This arc also stands out from the others sub-storyin this game in terms of visuals, map design, and writing. (I guess the developers really love Arthurian legend, huh...)
+    </p>
+    <img src="avalon.jpeg" alt="Avalon Main" class="main-image" />
+     <br><br>
+    <h2>Why I Love Avalon le Fae So Much...</h2>
+
+    
+    <div class="section">
+      <h2>Map & Visuals</h2>
+      <p>
+        The map of Avalon le Fae is one of the reasons why I love this arc so much. It’s so beautiful to me, and I think it's the best map I’ve seen in Fate/Grand Order.
+      </p>
+      <div class="gallery">
+        <img src="map1.jpg" alt="Map 1">
+        <img src="map2.jpg" alt="Map 2">
+        <img src="map3.jpg" alt="Map 3">
+        <img src="map4.jpg" alt="Map 4">
+      </div>
+    </div>
+
+   
+    <div class="section">
+      <h2>My Favourite Characters</h2>
+      <div class="characters">
+        <div class="character-profile">
+          <img src="morgan.webp" alt="Morgan">
+          <h3>Morgan</h3>
+          <p>She’s been my favorite character throughout my entire time playing this game. At first, I assumed she was just another villain, but after finishing Avalon  
+             le Fae, I realized how wrong I was about her. What I love most about Morgan is her striking character design and the fact that she has a tragic backstory.         
+             Honestly…she deserves so much better.</p>
+        </div>
+        <div class="character-profile">
+          <img src="vortigern.webp" alt="Oberon">
+          <h3>Oberon</h3>
+          <p>This Mothman is one of the main reasons why Avalon le Fae is the best sub-story in Fate/Grand Order. The way his character shifts from being an ally to 
+               becoming the final boss in the story makes him one of the most iconic villains in the entire game.</p>
+        </div>
+        <div class="character-profile">
+          <img src="castoria.webp" alt="Castoria">
+          <h3>Castoria</h3>
+          <p>She’s the heart and soul of this story and the true main character. What draws me to her the most is her unwavering determination. No matter how many
+             times she stumbles or falls, she never gives up on what she believes in. And honestly, that kind of strength… it really inspires me...</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="section">
+      <h2>The Story</h2>
+      <p>
+       Avalon le Fae is honestly the best sub-story or arc I’ve read/played so far. Besides having an amazing plot, every character from the main cast to the side 
+       characters has their own unique charm. I didn’t even skip the story here, which is kinda different from the earlier arcs in Fate/Grand Order heheh.
+       A lot of FGO fans also agree that Avalon le Fae is the best arc so far and I remember someone literally say <strong>“Avalon le Fae is when FGO peaked”</strong> 
+       and I'm totally agree with him and i think that’s just facts. From the plot, the characters, the story build-up, all the way to the ending — it was perfect to     
+       me. Oh, and below are some of my favorite moments from this arc while I was playing.
+      </p>
+      <div class="story-gallery">
+        <img src="story1.jpg" alt="Story 1">
+        <img src="story2.jpg" alt="Story 2">
+        <img src="story3.jpg" alt="Story 3">
+        <img src="story4.jpg" alt="Story 4">
+        <img src="story5.jpg" alt="Story 5">
+        <img src="story6.jpg" alt="Story 6">
+        <img src="story7.jpg" alt="Story 7">
+        <img src="story8.jpg" alt="Story 8">
+      </div>
+    </div>
+
+   
+    <div class="section">
+      <h2>Soundtrack</h2>
+      <p>Here are some of my favourite soundtracks from the Avalon le Fae arc:</p>
+
+      <h4>1. The Moment a Planet is Born</h4>
+      <audio controls>
+        <source src="planet.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h4>2. Winter Throne</h4>
+      <audio controls>
+        <source src="winter.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h4>3. Oberon Theme</h4>
+      <audio controls>
+        <source src="oberon.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+  
+   
+   <div class="section">
+   <h2>Avalon Le Fae Trailer</h2>
+  <video controls>
+        <source src="trailer.mp4" type="video/mp4">
+      </video>
+  </div>
+ </div>
+
+  
+  <footer>
+   &copy; 2025 Muhammad Zahiruddin Bin Izam Azali | Recommended Browser: Chrome | Resolution: 1366x768 | Last updated: June 5, 2025
+  </footer>
+
+</body>
+</html>

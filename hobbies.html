@@ -1,65 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>My Hobbies</title>
   <meta charset="UTF-8" />
   <style>
-    body { font-family: Arial, sans-serif;  margin: 0; padding: 0; background: whitesmoke; }
-    #nav ul { background: darkslategray; padding: 10px; list-style: none; margin: 0; text-align: center; }
-    #nav ul li { display: inline; margin: 0 10px; }
-    #nav ul li a { color: white; text-decoration: none; }
-    #nav ul li a:hover { text-decoration: underline; }
-    #header { text-align: center; background: lightgray; padding: 15px; }
-    #footer { text-align: center; background: darkslategray; padding: 15px; }
-    #content { padding: 20px; }
-    h1, h2 {color: dimgray; }
-  
-    .hobby { background-color: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
-    .hobby img { width: 100%; max-width: 300px; height: auto; border-radius: 10px; margin-top: 10px; }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: mediumaquamarine;
+    }
+
+    header img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .navbar {
+      background: darkslategray;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .navbar a:hover,
+    .navbar .active {
+      background: mediumturquoise;
+      border-radius: 5px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .content p {
+      text-align: justify;
+      line-height: 1.8;
+      word-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .game-section {
+      margin-top: 120px;
+    }
+
+    .game-image {
+      width: 300px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: darkslategray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
 
-  <div id="header">
+ 
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="family.html">My Family</a>
+    <a href="education.html">My Education</a>
+    <a href="hobbies.html" class="active">Hobbies</a>
+    <a href="interest.html">Personal Interest</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  
+  <div class="content">
     <h1>My Hobbies</h1>
-  </div>
+    <p>I enjoy spending my free time doing things that make me happy and creative. One and my favorite hobbies is to playing video games!. For me, playing video games is one of the ways I escape from stress or the real world. It might sound a bit funny, but when I’m gaming, it feels like I’m in my own little world. Some of my favorite games are Mobile Legends, eFootball Mobile, and Fate/Grand Order.</p>
 
-  <div id="nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="background.html">My Background</a></li>
-      <li><a href="myfamily.html">Family</a></li>
-      <li><a href="game.html">My Favourite Game</a></li>
-      <li><a href="hobbies.html">Hobbies</a></li>
-      <li><a href="education.html">My Education</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-
-  <div id="content">
-    <div class="hobby">
-      <h2>Reading</h2>
-      <p>I love reading manga, novels, and comics that let me explore different characters and worlds.</p>
-      <img src="reading.jpg" alt="reading" />
+    
+    <div class="game-section">
+      <img src="ml.jpg" alt="Mobile Legends" class="game-image">
+      <h2>Mobile Legends</h2>
+      <p>
+        Mobile Legends is one of my favorite games because of its fast-paced, strategic 5v5 gameplay. I usually play as a hyper or gold lane hero, and my top picks are   
+        Joy, Granger, Harith, and Ling. Whether I'm pushing rank or just having fun with friends, the game always keeps me engaged. I enjoy the thrill of every match,    
+        especially the intense team fights. The video below shows one of my gameplay sessions using Joy, one of my favorite heroes.
+      </p>
+      <video controls>
+        <source src="ml.mp4" type="video/mp4">
+      </video>
     </div>
 
-    <div class="hobby">
-      <h2>Listening to Music</h2>
-      <p>I often listen to J-Pop, anime soundtracks, and lo-fi music when relaxing or doing assignments.</p>
-      <img src="music.jpg" alt="Listening to Music" />
+   
+    <div class="game-section">
+      <img src="efootball.jpg" alt="eFootball" class="game-image">
+      <h2>eFootball Mobile</h2>
+      <p>
+        eFootball Mobile is my go-to football game. I love how realistic and competitive it feels, especially when building and customizing my dream team. Every match 
+        is a chance to test my tactics and improve my skills. Climbing the ranks in online matches is always satisfying, and it keeps me motivated to keep playing. The    
+        video below captures one of my matches where I put my strategy to the test.
+      </p>
+      <video controls>
+        <source src="efootball.mp4" type="video/mp4">
+      </video>
     </div>
 
-    <div class="hobby">
-      <h2>Gaming</h2>
-      <p>I enjoy playing action and story-based games like Fate/Grand Order or Moba Game like Mobile legend Bang Bang, especially during my free time.</p>
-      <img src="game.webp" alt="Gaming" />
+   
+    <div class="game-section">
+      <img src="fgo.jpg" alt="FGO" class="game-image">
+      <h2>Fate/Grand Order</h2>
+      <p>
+        Fate/Grand Order is a game I truly enjoy for its deep storytelling and beautifully designed characters. I love collecting heroic servants and using them in 
+        strategic, turn-based battles. Each servant has a unique backstory and personality, which makes the game feel like a rich anime experience. What keeps me    
+        playing is the emotional, well-written story arcs. The video below showcases my gameplay during one of my favorite moments in the game.
+      </p>
+      <video controls>
+        <source src="fgo.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
- <div id="footer">
-    <p>&copy; 2025 Muhammad Zahiruddin Bin Izam Azali. Recommended Browser: Chrome. Resolution: 1366x768  Last updated: June 5, 2025.</p>
-  </div>
+ 
+  <footer>
+    &copy; 2025 Muhammad Zahiruddin Bin Izam Azali | Recommended Browser: Chrome | Resolution: 1366x768 | Last updated: June 5, 2025
+  </footer>
 
 </body>
 </html>
+

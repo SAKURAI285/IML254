@@ -1,62 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Gallery</title>
   <meta charset="UTF-8" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: whitesmoke; }
-    #header { background: lightgray; text-align: center; padding: 15px; }
-    #footer { text-align: center; background: darkslategray; padding: 15px; }
-    #nav { background: darkslategray; text-align: center; padding: 10px; }
-    #nav a { color: white; text-decoration: none; margin: 0 10px; }
-    #nav a:hover { text-decoration: underline; }
-    h1, h2 { text-align: center; color: dimgray; }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: mediumaquamarine;
+    }
 
-    .gallery-section { padding: 20px; text-align: center; }
-    .gallery-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-bottom: 30px; }
-    .gallery-row img { width: 200px; height: 150px; object-fit: cover; border-radius: 8px; border: 1px solid Gray80;  
-</style>
+    header img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .navbar {
+      background: darkslategray;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 10px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .navbar a:hover,
+    .navbar .active {
+      background: mediumturquoise;
+      border-radius: 5px;
+    }
+
+    .content h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: darkslategray;
+    }
+
+    .gallery {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0 10px;
+    }
+
+    .gallery img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 0.8s forwards;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+   
+    #lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px black;
+    }
+
+    footer {
+      background: darkslategray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
-  <div id="header">
-    <h1>My Gallery</h1>
-  </div>
-
-  <div id="nav">
+    <div class="navbar">
     <a href="index.html">Home</a>
-    <a href="background.html">My Background</a>
-    <a href="myfamily.html">Family</a>
-    <a href="game.html">My Favourite Game</a>
-    <a href="hobbies.html">Hobbies</a>
+    <a href="about.html">About Me</a>
+    <a href="family.html">My Family</a>
     <a href="education.html">My Education</a>
-    <a href="gallery.html">Gallery</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="interest.html">Personal Interest</a>
+    <a href="gallery.html" class="active">Gallery</a>
     <a href="contact.html">Contact</a>
   </div>
 
+    <div class="content">
+    <h1>My Gallery</h1>
+
+    <div class="gallery">
+      <img src="img1.jpg" alt="1" onclick="openLightbox(this.src)">
+      <img src="img2.jpg" alt="2" onclick="openLightbox(this.src)">
+      <img src="img3.jpg" alt="3" onclick="openLightbox(this.src)">
+      <img src="img4.jpg" alt="4" onclick="openLightbox(this.src)">
+      <img src="img5.jpg" alt="5" onclick="openLightbox(this.src)">
+      <img src="img6.jpg" alt="6" onclick="openLightbox(this.src)">
+      <img src="img7.jpg" alt="7" onclick="openLightbox(this.src)">
+      <img src="img8.jpg" alt="8" onclick="openLightbox(this.src)">
+      <img src="img9.jpg" alt="9" onclick="openLightbox(this.src)">
+      <img src="img10.jpg" alt="10" onclick="openLightbox(this.src)">
+      <img src="img11.jpg" alt="11" onclick="openLightbox(this.src)">
+      <img src="img12.jpg" alt="12" onclick="openLightbox(this.src)">
+      <img src="img13.jpg" alt="13" onclick="openLightbox(this.src)">
+      <img src="img14.jpg" alt="14" onclick="openLightbox(this.src)">
+      <img src="img15.jpg" alt="15" onclick="openLightbox(this.src)">
+      <img src="img16.jpg" alt="16" onclick="openLightbox(this.src)">
+      <img src="img17.jpg" alt="17" onclick="openLightbox(this.src)">
+      <img src="img18.jpg" alt="18" onclick="openLightbox(this.src)">
+       </div>
+     </div>
+
   
-  <div class="gallery-section">
-    <h2>ALBUM</h2>
-    <div class="gallery-row">
-      <img src="familyone.jpg" alt="Family 1" />
-      <img src="familytwo.jpg" alt="Family 2" />
-      <img src="familythree.jpg" alt="Family 3" />
-      <img src="familyfourth.jpg" alt="Family 3" />
-      <img src="familyfive.jpg" alt="Family 3" />
-      <img src="familysix.jpg" alt="Family 3" />
-      <img src="familyseven.jpg" alt="Family 3" />
-      <img src="familyeight.jpg" alt="Family 3" />
-      <img src="familynine.jpg" alt="Family 3" />
-      <img src="familyten.jpg" alt="Family 3" />
-      <img src="familyeleven.jpg" alt="Family 3" />
-      <img src="familytwelve.jpg" alt="Family 3" />
-    </div>
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Zoomed Image">
   </div>
 
+ 
+  <footer>
+     &copy; 2025 Muhammad Zahiruddin Bin Izam Azali | Recommended Browser: Chrome | Resolution: 1366x768 | Last updated: June 5, 2025
+  </footer>
 
- <div id="footer">
-    <p>&copy; 2025 Muhammad Zahiruddin Bin Izam Azali. Recommended Browser: Chrome. Resolution: 1366x768  Last updated: June 5, 2025.</p>
-  </div>
+  
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
 
 </body>
 </html>

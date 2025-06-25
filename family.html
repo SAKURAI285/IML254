@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Family</title>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: mediumaquamarine;
+      background-size: 400% 400%;
+      animation: movebg 15s ease infinite;
+      color: black;
+    }
+
+    @keyframes movebg {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    header {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      background: darkslategray;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background: mediumturquoise;
+      border-radius: 5px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .content h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: darkslategray;
+    }
+
+    .member-box {
+      background: white;
+      border-radius: 40px;
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05); 
+    }
+
+    .member-box.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .member-box img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+     }
+    
+    .member-box img:hover {
+      transform: scale(1.05);
+    }
+
+    .member-info {
+      flex: 2;
+    }
+
+    .member-info h2 {
+      margin: 0 0 10px;
+      color: SteelBlue;
+    }
+
+    .member-info p {
+      margin: 0;
+      line-height: 1.6;
+      color: dimgray;
+    }
+
+    footer {
+      background: darkslategray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="family.html" class="active">My Family</a>
+    <a href="education.html">My Education</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="interest.html">Personal Interest</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  
+  <div class="content">
+    <h1>My Family</h1>
+
+   
+    <div class="member-box">
+      <img src="grandmother.jpg" alt="grandmother">
+      <div class="member-info">
+        <h2>My Grandmother</h2>
+        <p>My Grandmother name is <strong> Nismah Binti Said</strong>. She's someone that looks fierce outside but warm inside. She always gives me    
+           motivation and also supports me financially. And the funny thing is, my siblings always say that I’m our grandma’s favorite grandchild. But honestly, I feel 
+           like she treats all of us the same (well, that’s just my opinion though — I’m not sure what the other grandkids think).</p>
+      </div>
+    </div>
+
+   
+    <div class="member-box reverse">
+      <img src="father.jpg" alt="Father">
+      <div class="member-info">
+        <h2>My Father</h2>
+        <p>My dad’s name is <strong> Izam Azali Bin Ishak</strong> and he’s 57 years old. He works as a teacher at a school Puchong Utama 2. He’s honestly such a funny   
+           guy and always cracking jokes when we’re   feeling down. And yeah, we all enjoy being around him (even if his jokes can be kinda lame sometimes hehe..). You  
+           probably wouldn’t guess it just by looking at him, but he’s actually the football team coach at his school right now.</p>
+      </div>
+    </div>
+
+   
+    <div class="member-box">
+      <img src="mother.jpg" alt="Mother">
+      <div class="member-info">
+        <h2>My Mother</h2>
+        <p>My mum’s name is <strong>Norhaslinda Binti Ibrahim</strong> and she’s 52 years old. She’s a teacher at a school at Taman Desaminium, but fun fact — she   
+           actually used to teach me Malay back when I was in SK Puchong Batu 14! She really loves her kids a lot. I still remember when I was in Year 1, she took a 
+           few months off just to stay with me in the hospital after I broke my arm. She’s also been a big help financially (along with my dad) while I’ve  
+           been studying here.</p>
+      </div>
+    </div>
+
+ 
+    <div class="member-box reverse">
+      <img src="oldersister.jpg" alt="Older Sister">
+      <div class="member-info">
+        <h2>My Older Sister</h2>
+        <p>My sister’s name is <strong>Norfikriah Umaira Binti Izam Azali</strong> and she’s 25 years old. She works as an accountant at a company called Steel Recon 
+           Industries. She absolutely loves food especially when it comes to desserts! On top of that, she’s a big fan of watching badminton matches (even though she’s    
+           not exactly good at playing it herself). She’s also super into Korean dramas likes Missing the other side, mouse and Hotel De Luna.</p>
+      </div>
+    </div>
+
+
+     <div class="member-box">
+      <img src="youngersister.jpg" alt="Younger Sister">
+      <div class="member-info">
+        <h2>My Younger Sister</h2>
+        <p>My second sister’s name is <strong>Norhanis Madhihah Binti Izam Azali</strong> and she’s 21 years old. She's works at a Alpha Active Industries sdn.bhd.  
+           She’s a super cheerful and funny person, though she  can be a little annoying sometimes. Still, she really loves both her younger siblings wich is me and 
+           our little brother. Just like our eldest sister, she’s also really into Korean dramas.</p>
+      </div>
+    </div>
+
+ 
+    <div class="member-box reverse">
+      <img src="youngerbrother.jpg" alt="My Younger Brother">
+      <div class="member-info">
+        <h2>My Younger Brother</h2>
+        <p>My younger brother’s name is <strong> Muhammad Afif Zakwan Bin Izam Azali</strong> and he’s 16 years old. He goes to SMK Puchong Batu 14 which is the same 
+           school I used to attend. He’s a pretty quiet person, or as people like to call it nowadays, an “introvert.” He’s also a hardcore gamer, especially when it  
+           comes to Mobile Legends. Every time we meet our relatives, they always think he’s the older sibling and I’m the younger one, just because he’s taller than 
+           me (he’s 168 cm while I’m only 158 cm). But still, he’s a little brother I really love and care about</p>
+      </div>
+    </div>
+
+  </div>
+
+ 
+  <footer>
+    &copy; 2025 Muhammad Zahiruddin Bin Izam Azali | Recommended Browser: Chrome | Resolution: 1366x768 | Last updated: June 5, 2025
+  </footer>
+
+</body>
+</html>

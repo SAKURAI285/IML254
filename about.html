@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Me</title>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', sans-serif;
+      background: MediumAquamarine;
+      background-size: 400% 400%;
+      animation: movebg 15s ease infinite;
+      color: black;
+    }
+
+    @keyframes movebg {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .navbar {
+      background: darkslategray;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background: MediumTurquoise;
+      border-radius: 5px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .about-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .about-box img {
+      width: 220px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .about-box img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-text {
+      flex: 1;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: dimgray;
+    }
+
+    .content h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: darkslategray;
+    }
+
+    footer {
+      background: darkslategray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About Me</a>
+    <a href="family.html">My Family</a>
+    <a href="education.html">My Education</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="interest.html">Personal Interest</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  
+  <div class="content">
+    <h1>About Me</h1>
+    <div class="about-box">
+      <img src="me.jpg" alt="My Photo">
+      <div class="about-text">
+        <p>Assalamualaikum, my name is <strong>Muhammad Zahiruddin Bin Izam Azali</strong>. I’m a 19-year-old student and currently pursuing a Diploma in Library Informatics at UiTM Kedah.</p>
+        <p>I was born on 1 January 2006, and I come from a loving family as the third of four siblings. I live at No. 202 Kuarters Guru, Puchong Batu 14. As for food? Nothing beats a plate of Ayam Goreng Kunyit — it’s absolutely my favorite!</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer>
+   &copy; 2025 Muhammad Zahiruddin Bin Izam Azali | Recommended Browser: Chrome | Resolution: 1366x768 | Last updated: June 5, 2025
+  </footer>
+
+</body>
+</html>

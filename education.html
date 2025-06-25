@@ -1,98 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>My Education</title>
   <meta charset="UTF-8" />
   <style>
-    body {font-family: Arial, sans-serif; margin: 0; padding: 0; background: whitesmoke; }
-    #nav ul { background: darkslategray; padding: 10px; list-style: none; margin: 0; text-align: center; }
-    #nav ul li { display: inline; margin: 0 10px; }
-    #nav ul li a { color: white; text-decoration: none; }
-    #nav ul li a:hover { text-decoration: underline; }
-    #header { text-align: center; background: lightgray; padding: 15px; }
-    #footer { text-align: center; background: darkslategray; padding: 15px; }
-    #content { padding: 20px; }
-    h1, h2 { color: dimgray; }
-    
-  table {
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: mediumaquamarine;
+      color: black;
+    }
+
+    header {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      background: darkslategray;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 12px 18px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background: mediumturquoise;
+      border-radius: 5px;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .content h1 {
+      text-align: center;
+      color: darkslategray;
+    }
+
+    table {
       width: 100%;
       border-collapse: collapse;
-      background-color: white;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
     }
+
     th, td {
-      padding: 15px;
-      border: 1px solid gray;
-      text-align: center;
-      vertical-align: middle;
+      padding: 25px;
+      text-align: left;
+      border-bottom: 2px solid lightgray;
+      vertical-align: top;
+      line-height: 1.6;
     }
+
     th {
-      background-color: lightcyan;
+      background-color: teal;
+      color: white;
     }
-    img.logo {
-      width: 80px;
-      height: auto;
+
+    .edu-img {
+      width: 400px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: darkslategray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <div id="header">
+   <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="family.html">My Family</a>
+    <a href="education.html" class="active">My Education</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="interest.html">Personal Interest</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  
+  <div class="content">
     <h1>My Education Journey</h1>
-  </div>
-
-  <div id="nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="background.html">My Background</a></li>
-      <li><a href="myfamily.html">Family</a></li>
-      <li><a href="game.html">My Favourite Game</a></li>
-      <li><a href="hobbies.html">Hobbies</a></li>
-      <li><a href="education.html">My Education</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-
-  <div id="content">
-    <h2>Education Timeline</h2>
-    <p>Below is a summary of my educational journey, from primary school to university.</p>
 
     <table>
       <tr>
-        <th>Level</th>
-        <th>School/Institution</th>
-        <th>Years</th>
-        <th>Logo</th>
+        <th>Education Level</th>
+        <th>Image</th>
+        <th>Year</th>
         <th>Description</th>
       </tr>
+
+      <tr>
+        <td>Kindergarten</td>
+        <td><img src="tabika.jpg" alt="Kindergarten" class="edu-img" /></td>
+        <td>2010 - 2011</td>
+        <td>
+          My kindergarten was <strong> Tabika Kemas</strong>. This was my very first time stepping into the world of school. It was here that I learned so many new 
+         things like writing, coloring, drawing, and more. It was also the first time I got to make friends and interact with kids my age.
+         <br><br>
+         Even though I don’t remember much from that time, I believe it were full and enjoyable during those years.       
+        </td>
+      </tr>
+
       <tr>
         <td>Primary School</td>
-        <td>SK Example Primary School</td>
+        <td><img src="sk.jpg" alt="Primary School" class="edu-img" /></td>
         <td>2012 - 2017</td>
-        <td><img src="sk.jpg" alt="Primary Logo" class="logo"></td>
-        <td>This is where my formal education began. I learned basic subjects and developed a love for reading and learning.</td>
+        <td>
+          My primary school was <strong>SK Puchong Batu 14</strong>. This was where I really started to grow academically. I learned a wide range of subjects like 
+          Islamic Education, Physical Education, Arabic, and History. At first, it was a big change from kindergarten — I still remember staring at the wall clock,     
+          hoping time would pass quickly because the lessons felt so long!
+          <br><br>
+          My school had two sessions: morning and afternoon. Students in Years 4, 5, and 6 attended in the morning from 7:30 a.m. to 1:00 p.m., while Years 1, 2, and 3   
+          had classes in the afternoon from 1:30 p.m. to 6:30 p.m. Even so, I never had to worry about being late to school because the distance between my house and 
+          the school was less than 50 meters. Yes — 50 meters! It sounds a bit crazy, but that’s the truth!
+          <br><br>
+          All in all, my experience in primary school was super fun and full of great memories. I honestly enjoyed every moment of it!
+        </td>
       </tr>
+
       <tr>
         <td>Secondary School</td>
-        <td>SMK Example Secondary School</td>
+        <td><img src="smk.jpg" alt="Secondary School" class="edu-img" /></td>
         <td>2018 - 2022</td>
-        <td><img src="smk.jpg" alt="Secondary Logo" class="logo"></td>
-        <td>I built deeper knowledge in science, mathematics, and language. I also joined co-curricular activities and developed leadership skills.</td>
+        <td>
+          My secondary school was <strong>SMK Puchong Batu 14</strong>.This was when I started focusing more on my academic achievements, hoping to become a better 
+         student and make my parents proud. To be honest, there wasn't a huge difference between secondary school and primary school — except for having new friends     
+         and teachers (well, that’s just my opinion).
+         <br><br>
+         I can't forget about my Form 4 and 5 moments, especially when I took new subjects like Household Science, where I learned how to cook and sew (I honestly   
+         thought it was a bit funny for a guy to take this subject at first hehe..), and Agricultural Science, where I learned about planting and farming.
+         Even though it was tough at first, those final two years became my favorite years in secondary school. I also made some amazing friends like Aiman, Farish,     
+         Kimi, Farhan, and many more.
+         <br><br>
+         It’s these moments that made me realize how important it is to appreciate our time in school.
+         (And yes... I really wish I had a time machine so I could go back to those days!)
+        </td>
       </tr>
+
       <tr>
-        <td>University</td>
-        <td>Universiti Teknologi MARA (UiTM)</td>
+        <td>Diploma</td>
+        <td><img src="uitm.jpg" alt="University" class="edu-img" /></td>
         <td>2023 - Present</td>
-        <td><img src="uitm.png" alt="UiTM Logo" class="logo"></td>
-        <td>Currently pursuing my studies at UiTM Sungai Petani in the field of Diploma in Library Informatics. This is where I’m growing both personally and professionally.</td>
+        <td>
+         I am currently continuing my studies at <strong>Universiti Teknologi MARA (UiTM)</strong>, Sungai Petani campus, pursuing a diploma in Library Informatics.
+         At university, I can really feel a big difference compared to life in secondary school. On top of that, this is the first time in my life that I’m living far     
+         away from my family — and to be honest, during the first week, I almost cried because I missed my family back in Selangor so much.        
+       <br><br>
+        But over time, I started getting used to life here. I learned how to be independent, and it’s also here where I met some amazing and funny friends like Amir, 
+        Iqbal, Rifqie, fathi, hafizi, aiman and many more. University life has taught me a lot about the meaning of life. And even though it was tough in the   
+        beginning, it’s actually been a really fun experience overall. (Time really flies I guess because you know what, I’m already in Semester 4 hehe...)
+       </td>
       </tr>
+
     </table>
   </div>
 
-  <div id="footer">
-    <p>&copy; 2025 Muhammad Zahiruddin Bin Izam Azali. Recommended Browser: Chrome. Resolution: 1366x768  Last updated: June 5, 2025.</p>
-  </div>
+   <footer>
+     &copy; 2025 Muhammad Zahiruddin Bin Izam Azali | Recommended Browser: Chrome | Resolution: 1366x768 | Last updated: June 5, 2025
+  </footer>
 
 </body>
 </html>
